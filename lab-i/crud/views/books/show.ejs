@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <title><%= title %></title>
+</head>
+<body class="show">
+<nav>
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/books">Books</a></li>
+    </ul>
+</nav>
+<main>
+    <h1><%= book.title %></h1>
+    <p><strong>Author:</strong> <%= book.author %></p>
+    <article>
+        <%- book.description %>
+    </article>
+
+    <ul class="action-list">
+        <li><a href="/books">Back to list</a></li>
+        <li><a href="/books/<%= book.id %>/edit">Edit</a></li>
+    </ul>
+</main>
+<footer>&copy;<%= new Date().getFullYear() %> CRUD App</footer>
+</body>
+</html>

@@ -1,0 +1,28 @@
+# Node
+node_modules/
+**/node_modules/
+npm-debug.log
+pnpm-lock.yaml
+package-lock.json
+# Databases
+*.db
+data.db
+# Logs
+*.log
+server.log
+# Environment
+.env
+# OS
+.DS_Store
+# Composer
+composer.phar
+# IDE
+.vscode/
+.idea/
+# Build
+dist/
+coverage/
+# Lockfiles
+pnpm-lock.yaml
+# Misc
+*.tgz
